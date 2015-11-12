@@ -2,8 +2,33 @@
       xmlns:app="http://schemas.android.com/apk/res-auto"
       xmlns:tools="http://schemas.android.com/tools"
       tools:context=".MainActivity">
-    <item android:id="@+id/action_settings"
-          android:title="@string/action_settings"
+      <item
+          android:id="@+id/action_logo"
           android:orderInCategory="100"
+          android:icon="@drawable/ic_action_logo"
+          app:showAsAction="ifRoom"
+          android:title=""/>
+      <item
+          android:id="@+id/action_discover"
+          android:title="@string/nav_item_discover"
+          android:orderInCategory="100"
+          android:icon="@drawable/ic_action_discover"
+          app:showAsAction="ifRoom" />
+      <item
+          android:id="@+id/action_pin"
+          android:title="@string/nav_item_pin"
+          android:orderInCategory="100"
+          android:icon="@drawable/ic_action_pin"
+          app:showAsAction="ifRoom" />
+
+      <item android:id="@+id/action_add"
+          android:title="@string/nav_item_add"
+          android:orderInCategory="100"
+          android:icon="@drawable/ic_action_add"
           app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_settings"
+        android:title="@string/action_settings"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
 </menu>
