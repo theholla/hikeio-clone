@@ -10,8 +10,8 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
-        <item name="colorAccentDark">@color/colorAccentDark</item>
-        <item name="colorAccentLight">@color/colorAccentLight</item>
+        <!--<item name="colorAccentDark">@color/colorAccentDark</item>-->
+        <!--<item name="colorAccentLight">@color/colorAccentLight</item>-->
     </style>
 
 </resources>

@@ -23,4 +23,24 @@
         android:id="@+id/btnMap"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/locationText"
+        android:hint="Portland, OR"
+        android:textSize="15sp"
+        android:layout_marginBottom="37dp"
+        android:layout_above="@+id/btnMap"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search by location: "
+        android:id="@+id/txtLocation"
+        android:layout_alignTop="@+id/locationText"
+        android:layout_toLeftOf="@+id/locationText"
+        android:layout_toStartOf="@+id/locationText"
+        android:textSize="15sp"/>
 </RelativeLayout>

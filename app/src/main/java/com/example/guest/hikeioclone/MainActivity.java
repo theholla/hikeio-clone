@@ -1,19 +1,22 @@
 package com.example.guest.hikeioclone;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends BaseActivity {
     @Bind(R.id.btnMap) Button mButton;
+    @Bind(R.id.locationText) EditText mLocationText;
     private Toolbar mToolbar;
 
     @Override
@@ -29,8 +32,14 @@ public class MainActivity extends AppCompatActivity {
         mButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, MapsActivity.class);
-                startActivity(intent);
+                String location = mLocationText.getText().toString();
+                Uri intentForLocation = Uri.parse("geo:0,0?q=" + location);
+                Log.d("LOCATION!!!!!", intentForLocation + "");
+                Intent mapIntent = new Intent(MainActivity.this, MapsActivity.class);
+                mapIntent.putExtra("location", intentForLocation);
+                mapIntent.setData(intentForLocation);
+                setContentView(R.layout.activity_maps);
+                startActivity(mapIntent);
             }
         });
 
