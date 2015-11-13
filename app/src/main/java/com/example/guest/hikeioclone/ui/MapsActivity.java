@@ -1,8 +1,9 @@
-package com.example.guest.hikeioclone;
+package com.example.guest.hikeioclone.ui;
 
-import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
+import android.support.v4.app.FragmentActivity;
 
+import com.example.guest.hikeioclone.R;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
